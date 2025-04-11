@@ -31,19 +31,19 @@ let frases = [
 
 let numFrases = frases.length;
 
-let numAleatorio = Math.random() * frases.lenght;
+let numAleatorio = Math.random() * frases.length;
 
-aleatorio = parseInt(aleatorio);
-let mensaje = frases[aleatorio];
+numAleatorio = parseInt(numAleatorio);
+let mensaje = frases[numAleatorio];
 console.log = numAleatorio;
 
-document.getElementById("resultado").textContent = mensaje;
+document.getElementById("frases").textContent = mensaje;
 
 function probarSuerte(){
     location.reload();
 }
  document.getElementById("probar").addEventListener("click", function() {
-    generarFrase();
+    //generarFrase();
     location.reload();
     document.body.style.backgroundColor = "C1C1C1"
  }
